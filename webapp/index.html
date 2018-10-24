@@ -17,10 +17,11 @@
 		
 		<script>
 			sap.ui.getCore().attachInit(function () {
-				new sap.ui.core.ComponentContainer({
-					name : "com.sap.techschool"
+				new sap.m.Shell({
+					app: new sap.ui.core.ComponentContainer({
+						name : "com.sap.techschool"
+					})	
 				}).placeAt("content");
-
 			});
 		</script>
 		

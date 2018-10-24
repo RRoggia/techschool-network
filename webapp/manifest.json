@@ -3,8 +3,9 @@
 	"sap.app": {
 		"id": "com.sap.techschool",
 		"type": "application",
-		"title": "TechSchool University",
-		"description": "TechSchool University Network application",
+		"i18n": "i18n/i18n.properties",
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
 		"applicationVersion": {
 			"version": "1.0.0"
 		}
@@ -28,6 +29,14 @@
 			"minUI5Version": "1.30",
 			"libs": {
 				"sap.m": {}
+			}
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "com.sap.techschool.i18n.i18n"
+				}
 			}
 		}
 	}

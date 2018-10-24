@@ -6,6 +6,14 @@
 		<pages>
 			<Page enableScrolling="true" title="{i18n>welcomeTechSchoolFeedText}" titleLevel="H2" showFooter="false">
 				<FeedInput placeholder="{i18n>whatIsOnYourMindText}" showIcon="false" class="sapUiSmallMargin" post="onPostFeedback"/>
+				<List
+				headerText="{i18n>feedbackWallText}"
+				items="{feedbacks>/}" >
+				<FeedListItem
+					timestamp="{feedbacks>date}"
+					text="{feedbacks>feedback}">
+				</FeedListItem>
+			</List>
 			</Page>
 		</pages>
 	</App>

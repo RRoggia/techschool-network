@@ -17,8 +17,8 @@
 		
 		<script>
 			sap.ui.getCore().attachInit(function () {
-				new sap.m.Text({
-					text: "welcome to the techschool University"
+				sap.ui.xmlview({
+					viewName : "com.sap.techschool.view.Feed"
 				}).placeAt("content");
 			});
 		</script>

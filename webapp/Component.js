@@ -5,12 +5,7 @@ sap.ui.define([
 	return UIComponent.extend("com.sap.techschool.Component", {
 
 		metadata: {
-			rootView: {
-				viewName: "com.sap.techschool.view.Feed",
-				type: "XML",
-				async: true,
-				id: "app"
-			}
+			manifest: "json"
 		},
 
 		init : function () {

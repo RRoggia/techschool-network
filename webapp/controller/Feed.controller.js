@@ -8,7 +8,7 @@ sap.ui.define([
 
 		onInit: function(){
 			this.feedbackModel = new JSONModel(Array.from([]));
-			this.getView().setModel(this.feedbackModel);
+			this.getView().setModel(this.feedbackModel, "feedbacks");
 		},
 
 		onPostFeedback: function(oEvent){
@@ -17,7 +17,7 @@ sap.ui.define([
 			var date = new Date(); 
 
 			var feedback = {
-				date: date.getDate(),
+				date: date,
 				feedback: feedbackEntered
 			}
 

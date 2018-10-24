@@ -4,6 +4,7 @@
 	<App>
 		<pages>
 			<Page enableScrolling="true" title="{i18n>welcomeTechSchoolFeedText}" titleLevel="H2" showFooter="false">
+				<FeedInput placeholder="{i18n>whatIsOnYourMindText}" showIcon="false" class="sapUiSmallMargin"/>
 			</Page>
 		</pages>
 	</App>

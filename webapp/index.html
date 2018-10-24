@@ -12,14 +12,15 @@
 		data-sap-ui-compatVersion="edge"
 		data-sap-ui-preload="async"
 		data-sap-ui-resourceroots='{
-            "com.sap.techschool": "./"
-         }'></script>
+			"com.sap.techschool": "./"
+		 }'></script>
 		
 		<script>
 			sap.ui.getCore().attachInit(function () {
-				sap.ui.xmlview({
-					viewName : "com.sap.techschool.view.Feed"
+				new sap.ui.core.ComponentContainer({
+					name : "com.sap.techschool"
 				}).placeAt("content");
+
 			});
 		</script>
 		
